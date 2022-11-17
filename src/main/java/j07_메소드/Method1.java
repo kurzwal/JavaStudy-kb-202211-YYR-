@@ -1,6 +1,6 @@
 package j07_메소드;
 
-public class Method {
+public class Method1 {
 	
 	public static void method1() {
 		System.out.println("메소드1 호출");
