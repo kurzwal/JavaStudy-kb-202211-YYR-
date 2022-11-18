@@ -1,8 +1,24 @@
 package j09_접근지정자.캡슐화;
 
 public class Student {
-	private String name;
-	private String gender;
+	protected String name;
+	protected String gender;
+	
+	// Setters
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	
+	// Getters
+	public String getName() {
+		return name;
+	}
+	public String getGender() {
+		return gender;
+	}
 	
 	public Student() {}
 	public Student(String name, String gender) {
