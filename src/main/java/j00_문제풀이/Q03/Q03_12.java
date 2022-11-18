@@ -8,6 +8,7 @@ public class Q03_12 {
 		int count = 0;
 		int num = sc.nextInt(); sc.nextLine();
 		int ret = num;
+		
 		while(true) {
 			count++;
 			if(num/10 == 0) {
