@@ -1,7 +1,9 @@
 package j10_배열;
 
 import java.util.Random;
-
+/*
+	강사님 답안 (끝까지 쓰지 않아서 답은 나오지 않음)
+ */
 public class Array4_2 {
 	public static void main(String[] args) {
 		Random random = new Random();
