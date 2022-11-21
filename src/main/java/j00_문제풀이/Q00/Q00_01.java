@@ -13,39 +13,39 @@ public class Q00_01 {
 		}
 		return false;
 	}
-	public static int foundMinNumber(int[] arr1, int[] arr2) {
+	public static int foundMinNumber(int[] arr1, int[] arr2) { // 겹치면서 최솟값 찾기
 		int count = 0;
 		int min = 0;
-		for (int i = 0; i < arr1.length; i++) {
+		for (int i = 0; i < arr1.length; i++) { // 첫값 찾기 (겹치기만 하면 통과후 바로 브레이크)
 			if(foundInt(arr1[i], arr2)) {
 				min = arr1[i];
 				count = i;
 				break;
 			}
 		}
-		for (int i = count ; i < arr1.length ; i++) {
+		for (int i = count ; i < arr1.length ; i++) { // 첫값과 비교해서 arr1에서만 찾기
 			if(foundInt(arr1[i], arr2) && min > arr1[i]) {
             min = arr1[i];
          }
 		}
 		return min;
 	}
-	public static int foundMaxNumber(int[] arr1, int[] arr2) {
+	public static int foundMaxNumber(int[] arr1, int[] arr2) { // 안겹치면서 최댓값 찾기
 		int count = 0;
 		int max = 0;
-		for (int i = 0; i < arr1.length; i++) {
+		for (int i = 0; i < arr1.length; i++) { // 첫값 찾기 (안겹치기만 하면 통과후 바로 브레이크)
 			if(!foundInt(arr1[i], arr2)) {
 				max = arr1[i];
 				count = i;
 				break;
 			}
 		}
-		for (int i = count ; i < arr1.length ; i++) {
+		for (int i = count ; i < arr1.length ; i++) { // 첫값과 비교해서 arr1에서 찾기
 			if(!foundInt(arr1[i], arr2) && max < arr1[i]) {
 				max = arr1[i];
 			}
 		}
-		for (int i = 0 ; i < arr2.length ; i++) {
+		for (int i = 0 ; i < arr2.length ; i++) { // 가져온 값은 arr2에서도 찾기
 			if(!foundInt(arr2[i], arr1) && max < arr2[i]) {
 				max = arr2[i];
 			}
