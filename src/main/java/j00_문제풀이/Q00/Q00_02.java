@@ -1,6 +1,7 @@
 package j00_문제풀이.Q00;
 
 public class Q00_02 {
+	// 혼자서 푼 내용
 	public static void main(String[] args) {
 		
 		int[] nums1 = new int[] {1, 8, 9, 16, 17};
