@@ -15,3 +15,9 @@ public interface Calculator {
 	public int calc(int[] values);				// 추상 메소드 선언
 	
 }
+
+/*
+	인터페이스와 추상클래스의 차이
+	1. 인터페이스는 다중 구현이 가능하다.
+	
+ */

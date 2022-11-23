@@ -12,9 +12,9 @@ public class Salary implements Calculator{		// 인터페이스는 implements로 
 		for(int i = 0; i < values.length; i++) {
 			result += values[i];
 		}
-		
+
 		result = (result - (int) (result * 0.03));
-		
+
 		return result;
 	}
 }

@@ -11,6 +11,7 @@ public abstract class Animal {
 	
 	private String kind;
 	
+	
 	public Animal(String kind) {
 		this.kind = kind;
 		System.out.println(kind + "이(가) 생성되었습니다.");
