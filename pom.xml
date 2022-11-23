@@ -14,4 +14,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!-- ↓↓↓↓↓↓↓↓↓ 라이브러리 추가분 ↓↓↓↓↓↓↓↓↓ -->
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <!-- ↑↑↑↑↑↑↑↑↑ 라이브러리 추가분 ↑↑↑↑↑↑↑↑↑-->
+
 </project>
