@@ -1,5 +1,7 @@
 package j14_스태틱.내부클래스;
-
+/*
+	빌더를 외부에서 생성하는 경우
+ */
 public class ProductBuilder {
 	
 	private int productCode;
@@ -26,7 +28,7 @@ public class ProductBuilder {
       return this;
 	}
 	public Product build() {
-		return new j14_스태틱.내부클래스.Product(productCode, productName, price, stock);
+		return new Product(productCode, productName, price, stock);
 	}
 	
 }

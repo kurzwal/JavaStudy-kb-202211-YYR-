@@ -13,6 +13,7 @@ public class ProductMain {
 		
 		Product product = productbuilder.build();
 		
+		System.out.println(product);
 		
 		
 	}

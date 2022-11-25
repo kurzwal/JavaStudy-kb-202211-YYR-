@@ -1,12 +1,14 @@
 package j14_스태틱.빌더;
-
+/*
+	==직접 만들어 본 빌더==
+ */
 public class Product {
 	
 	private int productCode;
 	private String productName;
 	private int price;
 	private int stock;
-	
+	// 전체 생성자
 	public Product(int productCode, String productName, int price, int stock) {
 		this.productCode = productCode;
 		this.productName = productName;

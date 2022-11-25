@@ -1,5 +1,7 @@
 package j14_스태틱.내부클래스;
-
+/*
+	빌더를 외부에서 생성하는 경우
+ */
 import lombok.AllArgsConstructor;
 import lombok.ToString;
 

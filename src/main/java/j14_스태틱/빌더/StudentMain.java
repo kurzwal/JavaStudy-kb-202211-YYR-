@@ -8,5 +8,6 @@ public class StudentMain {
 				  .address("부산 사상구 사상로")
 				  .build();
 		System.out.println(student);
+		
 	}
 }
