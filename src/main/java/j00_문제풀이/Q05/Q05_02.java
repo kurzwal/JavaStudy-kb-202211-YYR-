@@ -4,6 +4,7 @@ public class Q05_02 {
 	static int d(int n) {
 		int ret = 0;
 		ret += n;
+		
 		while (n != 0) {
 			ret += n%10;
 			n /= 10;
@@ -29,4 +30,5 @@ public class Q05_02 {
 			}
 		}
 	}
+	
 }
