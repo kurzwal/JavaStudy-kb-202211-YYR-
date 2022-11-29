@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class StudentList2 {
+	
 	public static void main(String[] args) {
 		List<Hobby> hl = Arrays.asList(new Hobby[] {
 				  new Hobby(1, "축구"),
@@ -58,8 +59,6 @@ public class StudentList2 {
 			}
 			System.out.println();
 		}
-		
-		
 		
 	}
 }
