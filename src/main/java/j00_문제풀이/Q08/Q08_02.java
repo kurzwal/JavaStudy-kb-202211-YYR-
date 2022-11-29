@@ -6,18 +6,37 @@ public class Q08_02 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt(); sc.nextLine();
-		int count = 0;
-      for (int i = 0; i < n; i++) {
-			int m = sc.nextInt();
-			if (foundPrimeNumber(m)) count++;
+		int m = sc.nextInt(); sc.nextLine();
+		int sum = 0;
+		int min = -1;
+		boolean[] arr = foundAllPrimeNumber(m);
+		for (int i = n ; i < m + 1 ; i++) {
+			if (!arr[i]) {
+				min = i+1;
+				break;
+			}
 		}
-		System.out.println(count);
+		if (min != -1) {
+			for (int i = n; i < m + 1; i++) {
+				if (!arr[i]) {
+					sum += i + 1;
+				}
+			}
+			System.out.println(sum);
+			System.out.println(min);
+		} else {
+			System.out.println(min);
+		}
 	}
-	public static boolean foundPrimeNumber(int n) {
-		if (n == 1) return false;
-		for (int i = 2; i < n/2+1; i++) {
-			if (n%i == 0) return false;
+	public static boolean[] foundAllPrimeNumber(int n) { // 소수가 false
+		boolean[] arr = new boolean[n];
+      for (int i = 2 ; i < n / 2 + 1 ; i++) {
+			if (!arr[i]) {
+				for (int j = 2 ; i * j < n + 1 ; j++) {
+					arr[i * j] = true;
+				}
+			}
 		}
-		return true;
+		return arr;
 	}
 }
