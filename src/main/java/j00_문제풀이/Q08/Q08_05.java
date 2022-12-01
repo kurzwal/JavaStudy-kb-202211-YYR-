@@ -2,30 +2,22 @@ package j00_문제풀이.Q08;
 
 import java.util.Scanner;
 
-public class Q08_02 {
+public class Q08_05 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt(); sc.nextLine();
-		int m = sc.nextInt(); sc.nextLine();
-		int sum = 0;
-		int min = -1;
-		boolean[] arr = foundAllPrimeNumber(m);
-		for (int i = n ; i < m+1 ; i++) {
-			if (!arr[i] && i > 1) {
-				min = i;
-				break;
-			}
-		}
-		if (min != -1) {
-			for (int i = n; i < m+1 ; i++) {
+		int n = 1;
+		while (true) {
+			n = sc.nextInt(); sc.nextLine();
+			if (n==0) break;
+			int m = n*2;
+			int count = 0;
+			boolean[] arr = foundAllPrimeNumber(m);
+			for (int i = n+1; i < m+1 ; i++) {
 				if (!arr[i] && i > 1) {
-					sum += i;
+					count++;
 				}
 			}
-			System.out.println(sum);
-			System.out.println(min);
-		} else {
-			System.out.println(min);
+			System.out.println(count);
 		}
 	}
 	public static boolean[] foundAllPrimeNumber(int n) { // 소수가 false
