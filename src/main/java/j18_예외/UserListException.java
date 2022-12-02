@@ -43,8 +43,14 @@ public class UserListException {
 			}
 		} catch (NullPointerException e) {
 			System.out.println(e.getMessage());
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			// 무조건 마지막에 실행 (쓸모없다는 뜻)
+			System.out.println("무조건 실행");
 		}
 		////////////////////////////////////////////////////////////
+		System.out.println("무조건 실행");
 		System.out.println("프로그램 정상 종료");
 	}
 }
