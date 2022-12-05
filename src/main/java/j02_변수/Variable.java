@@ -12,7 +12,7 @@ public class Variable {
 		char name3 = '림';
 		System.out.println("" + name1 + name2 + name3);		//문자열
 		System.out.println(Integer.toHexString(name1));		//16진수
-		System.out.println("\uc720");								//16진수로 반환한 값을 유니코드로 작성
+		System.out.println("\uc720");						//16진수로 반환한 값을 유니코드로 작성
 		
 		int width = 100;
 		int width2 = 200;
