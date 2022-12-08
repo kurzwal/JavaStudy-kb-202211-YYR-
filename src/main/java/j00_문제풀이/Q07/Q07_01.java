@@ -7,9 +7,9 @@ public class Q07_01 {
 		Scanner sc = new Scanner(System.in);
 		int A = sc.nextInt(); int B = sc.nextInt(); int C = sc.nextInt(); sc.nextLine();
 		int S = C-B;
-		if(S<=0) System.out.println(-1);
-		
-		else {
+		if(S <=0) {
+			System.out.println(-1);
+		} else {
 			int ret = A/S;
 			System.out.println(ret+1);
 		}

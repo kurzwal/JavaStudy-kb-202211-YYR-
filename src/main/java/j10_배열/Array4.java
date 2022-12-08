@@ -12,6 +12,7 @@ public class Array4 {
 		}
 		return min;
 	}
+
 	public static int foundMaxNumber(int[] numbers) {
 		int max = numbers[0];
 		for (int i = 1; i < numbers.length; i++) {
@@ -21,7 +22,7 @@ public class Array4 {
 		}
 		return max;
 	}
-	
+
 	public static void main(String[] args) {
 		Random random = new Random();
 		int[] randomArray = new int[10];
@@ -31,12 +32,15 @@ public class Array4 {
 			randomArray[i] = (random.nextInt(10) + 1);
 			for (int j = 0; j < i; j++) {
 				if (randomArray[j] == randomArray[i]) {
-					i--; check = true; break;
+					i--;
+					check = true;
+					break;
 				}
 			}
 			if (check) {
-				check = false; continue;
-         }
+				check = false;
+				continue;
+			}
 			total += randomArray[i];
 			System.out.print(randomArray[i]);
 			if (i < randomArray.length - 1) {
@@ -44,9 +48,9 @@ public class Array4 {
 			}
 		}
 		System.out.println("\n총합 : " + total);
-		
+
 		System.out.println("Max number : " + foundMinNumber(randomArray));
 		System.out.println("Min number : " + foundMaxNumber(randomArray));
-		
+
 	}
 }
