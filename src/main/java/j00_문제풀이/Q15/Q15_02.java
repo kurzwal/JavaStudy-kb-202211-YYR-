@@ -1,0 +1,31 @@
+package j00_문제풀이.Q15;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Q15_02 {
+   public static void main(String[] args) throws IOException {
+      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+      StringTokenizer st = new StringTokenizer(br.readLine());
+      long a = Integer.parseInt(st.nextToken());
+      long b = Integer.parseInt(st.nextToken());
+      long ans = getLCM(a, b);
+      System.out.println(ans);
+   }
+
+   public static long getLCM(long a, long b) {
+      long x = a;
+      long y = b;
+      while (true) {
+         if (x == y) {
+            return x;
+         } else if (x < y) {
+            x += a;
+         } else {
+            y += b;
+         }
+      }
+   }
+}

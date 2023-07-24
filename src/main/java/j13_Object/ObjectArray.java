@@ -21,6 +21,8 @@ public class ObjectArray {
 			System.out.println(objects[i].getClass());
 			System.out.println();
 		}
-
+		
+		System.out.println((Student) (objects[0]));
+		
 	}
 }

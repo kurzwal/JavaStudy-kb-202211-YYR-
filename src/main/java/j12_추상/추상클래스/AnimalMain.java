@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class AnimalMain {
 	public static void main(String[] args) {
 		
+		Tiger t = new Tiger("Tiger");
+		t.eat();
 		
 		Scanner sc = new Scanner(System.in);
 		Animal animal = null;

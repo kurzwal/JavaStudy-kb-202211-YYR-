@@ -44,6 +44,6 @@ public class StudentMain {
 			System.out.println(methods[i].getName());
 		}
 		System.out.println();
-		
+
 	}
 }

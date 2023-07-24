@@ -13,6 +13,5 @@ public class Information<T> {
 	public void printInfo() {
 		System.out.println(target);
 	}
-	
-	
+
 }

@@ -5,8 +5,10 @@ public class Tiger extends Animal{
 	public Tiger(String kind) {
 		super(kind);
 	}
+	
 	@Override
 	public void move() {
 		System.out.println("호랑이가 움직인다");
 	}
+	
 }

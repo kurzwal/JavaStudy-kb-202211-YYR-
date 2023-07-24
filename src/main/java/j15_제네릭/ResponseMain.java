@@ -6,6 +6,10 @@ public class ResponseMain {
 	public static CMRespDto<?> response(String msg, Object data) {
 		return new CMRespDto<Object>(msg, data);	// Object 가 생략된다
 	}
+	
+	public static String amustring() {
+		return "amu";
+	}
 /*
 	와일드 카드 <?> 안에는 <? extends Object>, <? super Object>
 	를 적을 수 있다
@@ -20,6 +24,9 @@ public class ResponseMain {
 				  .name("유열림")
 				  .build();
 		
+		String a = amustring();
+		CMRespDto i1 = new CMRespDto("안녕", 1283769);
+		CMRespDto i2 = response("빠이", 1293875);
 		System.out.println(response("학생데이터 응답", student));
 		System.out.println(response("student code error!!", "학번에 오류가 있습니다."));
 	}

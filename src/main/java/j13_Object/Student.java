@@ -32,4 +32,8 @@ public class Student {
 				  ", name='" + name + '\'' +
 				  '}';
 	}
+	
+	public void getName() {
+		System.out.println(name);
+	}
 }

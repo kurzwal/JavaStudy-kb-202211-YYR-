@@ -2,6 +2,7 @@ package j15_제네릭;
 
 public class InformationMain {
 	public static void main(String[] args) {
+		
 		Student student = Student.builder()
 				  .studentCode(20220001)
 				  .name("유열림")
@@ -30,5 +31,6 @@ public class InformationMain {
 		studentInformation.printInfo();
 		teacherInformation.printInfo();
 		
+		Information<String> sss = new Information("asdf");
 	}
 }

@@ -15,5 +15,7 @@ public class EntityMain {
 		System.out.println(entity.getClass());
 		System.out.println(Entity.class);
 		
+		String a ="a";
+		System.out.println(a.getClass());
 	}
 }

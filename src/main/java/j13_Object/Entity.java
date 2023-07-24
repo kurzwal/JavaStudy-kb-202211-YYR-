@@ -19,4 +19,5 @@ public class Entity {
 	public boolean cmp() {
 		return this.getClass() == Entity.class;
 	}
+	
 }
